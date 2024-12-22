@@ -9,145 +9,228 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-            color: #000;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         header {
-            background-color: #1e90ff;
+            background-color: #007bff;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin: 0;
         }
 
         .container {
             padding: 20px;
-        }
-
-        .insurance-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .insurance-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background-color: #ffffff;
-            border: 2px solid #1e90ff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.2s, background-color 0.2s;
         }
 
-        .insurance-item:hover {
-            transform: scale(1.05);
-            background-color: #f0f8ff;
+        .intro-text {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
-        .insurance-item span {
+        ul.insurance-list {
+            list-style: none;
+            padding: 0;
+            margin: 0; /* Removed margin to remove space */
+        }
+
+        li.insurance-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%; /* Make each item take full width */
+        }
+
+        li.insurance-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        li.insurance-item span {
+            font-size: 1.2em;
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        li.insurance-item button {
+            padding: 10px 20px;
             font-size: 1em;
-            color: #1e90ff;
-        }
-
-        .insurance-item button {
-            margin-top: 10px;
-            padding: 8px 12px;
-            font-size: 0.9em;
             color: #fff;
-            background-color: #1e90ff;
+            background-color: #007bff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.3s;
         }
 
-        .insurance-item button:hover {
-            background-color: #104e8b;
+        li.insurance-item button:hover {
+            background-color: #0056b3;
         }
 
         footer {
-            background-color: #1e90ff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            background-color: #007bff;
             color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
         }
 
         footer p {
             margin: 0;
-            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Select Your Insurance Company</h1>
+        <h1>Serenova - Select Your Insurance Company</h1>
     </header>
 
     <div class="container">
-        <div class="insurance-grid">
-            <div class="insurance-item"><span>HDFC ERGO Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Star Health & Allied Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Reliance General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Bajaj Allianz Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Max Bupa Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>ICICI Lombard General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>New India Assurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>National Insurance Company</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>United India Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Oriental Insurance Company</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>SBI Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Tata AIG General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Future Generali India Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Aditya Birla Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>ManipalCigna Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>IFFCO Tokio General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Cholamandalam MS General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Universal Sompo General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Shriram General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Bharti AXA General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Go Digit General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Care Health Insurance (formerly Religare)</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Edelweiss General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Liberty General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Acko General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Royal Sundaram General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Kotak Mahindra General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>IDBI Federal Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>PNB MetLife Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Canara HSBC OBC Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Aviva Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Reliance Nippon Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Sahara India Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>DHFL Pramerica Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Exide Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>AEGON Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>IndiaFirst Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Raheja QBE General Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Sompo Japan Nipponkoa Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Bajaj Finserv Health Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Futurisk Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Kotak Life Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Swiss Re India Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Tokio Marine HCC India</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Zurich India Insurance</span><button>GET QUOTE</button></div>
-            <div class="insurance-item"><span>Standard Life Insurance</span><button>GET QUOTE</button></div>
-        </div>
+        <p class="intro-text">
+            At Serenova, we understand the importance of choosing the right insurance for your individual needs. 
+            Individual insurance offers personalized coverage for health, life, and general purposes, ensuring that 
+            you are protected against unforeseen risks and emergencies. Whether you're looking for health insurance to 
+            cover medical expenses, life insurance to secure your family's future, or general insurance to protect your 
+            assets, we offer a wide range of options tailored just for you. Explore the top insurance providers below and 
+            find the best coverage that suits your lifestyle and requirements.
+        </p>
+
+        <h2>List of Insurance Companies:</h2>
+
+        <ul class="insurance-list">
+            <li class="insurance-item">
+                <span>🌟 HDFC ERGO HealthGuard Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💙 Star Health & Shield Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🔥 Reliance Secure Life Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💎 Bajaj Allianz HealthPrime Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🌱 Max Bupa VitalCare Health Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🛡️ ICICI Lombard ProtectPlus Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🔒 New India SafeGuard Assurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🏥 SBI HealthSecure Plan</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🔑 Tata AIG Secure Shield Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💡 Aditya Birla CareMax Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🌍 ManipalCigna HealthAssist Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🚗 Acko DriveSafe General Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🌟 Future Generali SecureLife Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💬 Royal Sundaram SafeGuard Plus</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🏆 Exide Life SecureFuture Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🔹 Birla Sun Life Shield Plan</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>📊 Bharti AXA HealthMax Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>⚡ Future Generali HealthSecure Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💼 HDFC Life LifeGuard Plan</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🛡️ LIC India LifeSecure Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🔐 Kotak Mahindra General Secure Plan</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🌟 Bharti AXA LifeSecure Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🏠 Oriental PropertyShield Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💡 Reliance LifeProtection Plan</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>💼 GoDigit CompleteCare Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🛡️ Shriram SafeGuard Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+            <li class="insurance-item">
+                <span>🚑 ICICI Prudential HealthShield Insurance</span>
+                <button>GET QUOTE</button>
+            </li>
+        </ul>
     </div>
 
     <footer>
-        <p>&copy; 2024 Insurance App. All rights reserved.</p>
+        <p>&copy; 2024 Serenova Insurance App. All rights reserved.</p>
     </footer>
 </body>
 </html>
