@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenova - Special Touch Healthcare</title>
+    <!-- Include Font Awesome for mic icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #f5faff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #007bff;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eef6ff;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero-content h2 {
+            color: #007bff;
+        }
+
+        .hero-image img {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services h3 {
+            color: #007bff;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service {
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f5faff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 350px;
+        }
+
+        .service img {
+            width: 200px;
+            max-height: 200px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .service a {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: auto;
+        }
+
+        .service a:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .query-box {
+            background-color: #f5faff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            text-align: center;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        .query-box h3 {
+            color: #007bff;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .query-box p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .query-box textarea {
+            width: 100%;
+            height: 80px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .query-box button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .query-box button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-details {
+            background-color: #eef6ff;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details h3 {
+            color: #007bff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .contact-details p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Serenova Healthcare</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Special Touch Healthcare</h2>
+            <p>Providing comprehensive healthcare services with the latest technology and compassionate care.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://files.oaiusercontent.com/file-WwAFzFapWk1WNJwSRj8J63?se=2024-12-21T16%3A45%3A13Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3825c90b-5993-4148-9b9d-dacb9f793039.webp&sig=Jl5NatrawWm9hpFhUhHV4ARqqECb29jsTRd4%2Bj4DZik%3D" alt="Oncology" style="max-width: 400px; border-radius: 10px;">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h3>Our Services</h3>
+        <div class="service-list">
+            <!-- Services -->
+            <div class="service">
+                <img src="https://jupiter.money/blog/wp-content/uploads/2024/06/What_is_Health_Insurance.jpg" alt="Insurance">
+                <h4>Insurance</h4>
+                <a href="insurance.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://www.drsstantiamch.org/uploads/infrastructure/blood_bank.jpg" alt="Blood Donation">
+                <h4>Blood Donation</h4>
+                <a href="blood_donation.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://static.vecteezy.com/system/resources/previews/013/141/034/non_2x/book-doctor-appointment-card-template-schedule-hospital-visit-editable-social-media-post-design-flat-color-illustration-for-poster-web-banner-ecard-vector.jpg" alt="Appointments">
+                <h4>Appointments</h4>
+                <a href="appointments.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-30486,resizemode-75,msid-100567607/news/india/centre-told-to-inform-outcome-of-consultations-of-draft-rules-to-regulate-e-pharmacies.jpg" alt="E-Pharmacy">
+                <h4>E-Pharmacy</h4>
+                <a href="epharmacy.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://cdn3.rainbowhospitals.in/blog/banner_desktop_images/NImNRJ6c1gyPHI66d61dz5LZDzyVVNBssKVqfGB4.jpg" alt="Video Consultation">
+                <h4>Video Consultation</h4>
+                <a href="video_consultation.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://vanshhospital.in/wp-content/uploads/2023/12/Pediatric.jpg" alt="Frequently Visiting Doctor">
+                <h4>Frequently Visiting Doctor</h4>
+                <a href="visiting_doctor.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://www.shutterstock.com/image-vector/concept-warning-notification-exclamation-mark-260nw-2519923415.jpg" alt="Alerts & Call Reminders">
+                <h4>Alerts & Call Reminders</h4>
+                <a href="alerts.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://health-e.in/wp-content/uploads/2023/09/medical-records.webp" alt="Reports">
+                <h4>Reports</h4>
+                <a href="reports.html">View</a>
+            </div>
+
+            <!-- Specialists -->
+            <div class="service">
+                <img src="https://lifelinehospitalkerala.com/wp-content/uploads/2024/09/woman-is-holding-heart-shaped-human-heart-with-right-hand-scaled.jpg.webp" alt="Cardiology">
+                <h4>Cardiology</h4>
+                <a href="cardiology.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/06/orthopedic-doctor-ankle-732x549-thumbnail.jpg" alt="Orthopedics">
+                <h4>Orthopedics</h4>
+                <a href="orthopedics.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://vanshhospital.in/wp-content/uploads/2023/12/Pediatric.jpg" alt="Pediatrics">
+                <h4>Pediatrics</h4>
+                <a href="pediatrics.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://aryanhospital.in/wp-content/uploads/sites/28/2024/07/Neurology-1.jpg" alt="Neurology">
+                <h4>Neurology</h4>
+                <a href="neurology.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://images.squarespace-cdn.com/content/v1/666a06fbdeb99422f77f5935/e47d1d7a-0aec-4ef4-82f0-36906840f35c/dermatologist-valley-dermatology.png" alt="Dermatology">
+                <h4>Dermatology</h4>
+                <a href="dermatology.html">View</a>
+            </div>
+            <div class="service">
+                <img class="large" src="https://www.radiology.expert/content/images/sfeerfotos/resized/RadiologyExpert_Home2_640x500.jpg" alt="Radiology">
+                <h4>Radiology</h4>
+                <a href="radiology.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://bouve.northeastern.edu/wp-content/uploads/2023/05/psychiatrist-vs-psychologist-which-one-is-right-northeastern-graduate.webp" alt="Psychiatry">
+                <h4>Psychiatry</h4>
+                <a href="psychiatry.html">View</a>
+            </div>
+            <div class="service">
+                <img src="https://psdconnect.org/cdn/specialty_oncology_1_376da7aabb_b622eacadf.webp" alt="Oncology">
+                <h4>Oncology</h4>
+                <a href="oncology.html">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Query Box Section -->
+    <section class="query-box" id="query-box">
+        <h3>Have a Query?</h3>
+        <p>Feel free to ask any questions or share your feedback below.</p>
+        <textarea placeholder="Write your query here..."></textarea><br>
+        <button>Submit</button>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section class="contact-details" id="contact">
+        <h3>Contact Us</h3>
+        <p><strong>Address:</strong> Gitam University, Rudraram, Hyderabad, 502329</p>
+        <p><strong>Email:</strong> contact@serenovahealthcare.com</p>
+        <p><strong>Phone:</strong> +91-7989417869</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Serenova Healthcare. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Microphone Button -->
+    <button class="mic-button">
+        <i class="fas fa-microphone"></i>
+    </button>
+</body>
+</html>
