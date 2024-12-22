@@ -55,29 +55,29 @@
             line-height: 1.6;
         }
 
-        ul.insurance-list {
-            list-style: none;
+        .insurance-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+            gap: 20px;
             padding: 0;
-            margin: 0;
+            list-style: none; /* Removes the default list dots */
         }
 
-        li.insurance-item {
+        .insurance-item {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
-            width: 100%;
         }
 
-        li.insurance-item:hover {
+        .insurance-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        li.insurance-item span {
+        .insurance-item span {
             font-size: 1.2em;
             color: #007bff;
             font-weight: bold;
@@ -85,7 +85,7 @@
             display: block;
         }
 
-        li.insurance-item button {
+        .insurance-item button {
             padding: 10px 20px;
             font-size: 1em;
             color: #fff;
@@ -96,7 +96,7 @@
             transition: background-color 0.3s;
         }
 
-        li.insurance-item button:hover {
+        .insurance-item button:hover {
             background-color: #0056b3;
         }
 
@@ -119,6 +119,16 @@
 
             .search-bar {
                 width: 80%;
+            }
+
+            .insurance-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .insurance-list {
+                grid-template-columns: 1fr; /* 1 column on mobile screens */
             }
         }
     </style>
