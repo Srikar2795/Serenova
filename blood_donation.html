@@ -49,11 +49,12 @@
         }
 
         .service-img img {
-            width: 100%;
-            max-width: 900px;
+            width: 50%; /* Further reduced size to 50% of the container width */
+            max-width: 500px; /* Ensures the image doesn't exceed 500px */
             height: auto;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            margin: 30px 0;
+            margin: 20px auto; /* Center the image with top and bottom spacing */
+            display: block; /* Ensure proper centering */
         }
 
         .cta-button {
@@ -93,9 +94,11 @@
         }
 
         .service-card img {
-            width: 100%; /* Changed from 80% to 100% for full-width rectangular images */
+            width: 70%; /* Reduced size for images in cards */
+            max-width: 500px; /* Maximum width set for better scalability */
             height: auto;
-            margin-bottom: 20px;
+            margin: 0 auto 20px auto; /* Center the image and add spacing below */
+            display: block; /* Ensure proper centering */
         }
 
         .service-card h3 {
@@ -144,7 +147,6 @@
         <p>At Serenova Healthcare, we strongly believe that donating blood is one of the most important acts of kindness. Every donation can save up to three lives. We provide a safe, clean, and welcoming environment for all donors. Your support can make a difference in someone's life.</p>
 
         <div class="service-img">
-            <!-- Updated Image for Blood Donation -->
             <img src="https://cdn.vectorstock.com/i/1000v/92/86/blood-donation-symbol-with-hand-vector-43929286.jpg" alt="Blood Donation">
         </div>
 
@@ -153,21 +155,18 @@
 
     <div class="service-section">
         <div class="service-card">
-            <!-- Updated Image for Blood Donor -->
             <img src="https://www.careinsurance.com/upload_master/media/posts/June2020/IQKrrYI3nqo0i9PNqO7W.jpg" alt="Blood Donor">
             <h3>Become a Blood Donor</h3>
             <p>Join our community of blood donors who help save lives daily. Every donation counts!</p>
         </div>
 
         <div class="service-card">
-            <!-- Updated Image for Health Check -->
             <img src="https://cdn.cdnparenting.com/articles/2019/04/16145021/286865699-H-1024x700.webp" alt="Health Check Before Donation">
             <h3>Health Check Before Donation</h3>
             <p>Before donating, we ensure that you're in perfect health. Our professional team will conduct a quick checkup.</p>
         </div>
 
         <div class="service-card">
-            <!-- Updated Image for Blood Bank -->
             <img src="https://corepointscientific.com/wp-content/uploads/2023/04/BloodBank-refrigeration-CME%402x-min.png" alt="Blood Bank">
             <h3>Blood Bank Operations</h3>
             <p>Your donations help stock our blood bank, ensuring that we can provide life-saving blood when needed.</p>
