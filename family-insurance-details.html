@@ -53,36 +53,11 @@
             margin-bottom: 30px;
         }
 
-        .service-img img {
-            width: 80%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            margin: 30px 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 1.2em;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-
         .insurance-section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
-            margin: 40px 0;
+            margin: 40px 20px;
         }
 
         .insurance-card {
@@ -105,20 +80,32 @@
             margin-bottom: 20px;
         }
 
-        .insurance-card img.star-health {
-            width: 60%;
-        }
-
         .insurance-card h3 {
             color: #007bff;
-            font-size: 1.8em;
-            margin-bottom: 15px;
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
 
         .insurance-card p {
-            font-size: 1.1em;
+            font-size: 1em;
             color: #555;
             margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1em;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
         }
 
         .back-link {
@@ -156,7 +143,7 @@
             }
 
             .cta-button {
-                font-size: 1.1em;
+                font-size: 1em;
                 padding: 12px 24px;
             }
         }
@@ -175,40 +162,70 @@
     </div>
 
     <div id="insurance-plans" class="insurance-section">
-        <div class="insurance-card">
-            <img src="https://cdn.prod.website-files.com/6145f7156a1337613524d548/6329b1568d088fd54be731c4_logo__HDFC%20.png" alt="HDFC ERGO Family Health Insurance Logo">
-            <h3>HDFC ERGO Family Plan</h3>
-            <p>HDFC ERGO offers family health plans with extensive coverage, including hospitalization, maternity, and child health benefits.</p>
-            <a href="https://www.hdfcergo.com/health-insurance" class="cta-button">Get Quote</a>
-        </div>
+        <!-- 50 Insurance Company Cards -->
+        <script>
+            const insuranceCompanies = [
+                "HDFC ERGO Family Plan",
+                "Star Family Health Optima",
+                "Reliance Family Health Insurance",
+                "Bajaj Allianz Family Health Plan",
+                "Max Bupa Health Companion",
+                "ICICI Lombard Family Plan",
+                "New India Assurance Plan",
+                "National Insurance Family Policy",
+                "United India Family Health",
+                "Oriental Family Insurance",
+                "SBI Health Plan",
+                "Tata AIG Family Insurance",
+                "Future Generali Family Health",
+                "Aditya Birla Health Insurance",
+                "ManipalCigna Family Floater",
+                "IFFCO Tokio Family Plan",
+                "Cholamandalam Family Health",
+                "Universal Sompo Health Policy",
+                "Shriram General Insurance",
+                "Bharti AXA Family Health Plan",
+                "Go Digit Health Insurance",
+                "Care Health Family Plan",
+                "Edelweiss General Health",
+                "Liberty Family Insurance",
+                "Acko Health Insurance",
+                "Royal Sundaram Family Plan",
+                "Kotak Mahindra Family Floater",
+                "IDBI Federal Family Health",
+                "PNB MetLife Health Insurance",
+                "Canara HSBC Family Plan",
+                "Aviva Family Health Policy",
+                "Reliance Nippon Health Plan",
+                "Sahara India Health Plan",
+                "DHFL Pramerica Family Insurance",
+                "Exide Life Family Plan",
+                "AEGON Family Insurance",
+                "IndiaFirst Family Floater",
+                "Raheja QBE Health Plan",
+                "Sompo Japan Health Insurance",
+                "Tokio Marine Family Plan",
+                "Zurich Family Health Plan",
+                "Swiss Re Family Health Policy",
+                "Max Life Family Insurance",
+                "Bajaj Finserv Health Plan",
+                "Standard Family Health Policy",
+                "Apollo Munich Family Health Plan",
+                "Future Health Floater",
+                "Religare Family Health Plan",
+                "PolicyBazaar Family Options"
+            ];
 
-        <div class="insurance-card">
-            <img class="star-health" src="https://play-lh.googleusercontent.com/JEcrbamGiWvHjDBubpjIfDAZ5-aqy-z1oDXag4XSDptHSYtGftWcH_sfENba-lSlBQ" alt="Star Family Health Insurance">
-            <h3>Star Family Health Optima</h3>
-            <p>Star Health provides a comprehensive family floater plan with a wide network of hospitals and cashless treatment options.</p>
-            <a href="https://www.starhealth.in/health-insurance" class="cta-button">Get Quote</a>
-        </div>
-
-        <div class="insurance-card">
-            <img src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/ditjnisakcbckjzmtslb" alt="Reliance Family Health Insurance">
-            <h3>Reliance Family Health Insurance</h3>
-            <p>Reliance offers family floater health plans with features like no-claim bonuses, pre/post-hospitalization coverage, and daycare treatments.</p>
-            <a href="https://www.reliancegeneral.co.in/health-insurance" class="cta-button">Get Quote</a>
-        </div>
-
-        <div class="insurance-card">
-            <img src="https://images.moneycontrol.com/static-mcnews/2017/07/Bajaj-Allianz-Insurance-Logo-e1500914200739.jpg" alt="Bajaj Allianz Family Insurance">
-            <h3>Bajaj Allianz Family Health Plan</h3>
-            <p>With Bajaj Allianz, get customizable family plans with coverage for critical illnesses, maternity, and cashless hospitalization.</p>
-            <a href="https://www.bajajallianz.com/health-insurance" class="cta-button">Get Quote</a>
-        </div>
-
-        <div class="insurance-card">
-            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-03/21/full/20220321175241.jpg" alt="Max Bupa Family Insurance">
-            <h3>Max Bupa Health Companion</h3>
-            <p>Max Bupa offers family-focused health insurance with options for adding new members, free annual health check-ups, and wellness programs.</p>
-            <a href="https://www.maxbupa.com/family-health-insurance" class="cta-button">Get Quote</a>
-        </div>
+            insuranceCompanies.forEach(company => {
+                document.write(`
+                    <div class="insurance-card">
+                        <h3>${company}</h3>
+                        <p>Comprehensive family health plans with extensive coverage for your loved ones.</p>
+                        <a href="#" class="cta-button">Get Quote</a>
+                    </div>
+                `);
+            });
+        </script>
     </div>
 
     <div class="back-link">
