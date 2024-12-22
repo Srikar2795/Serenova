@@ -192,6 +192,33 @@
             margin-bottom: 15px;
         }
 
+        /* Mic and Chat Box Button Styles */
+        .mic-button, .chat-box-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .mic-button {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .chat-box-button {
+            right: 20px;
+        }
+
+        .mic-button:hover, .chat-box-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -212,7 +239,6 @@
             <img src="https://advinhealthcare.com/wp-content/uploads/2022/12/Types-of-Hospitals-2.jpg" alt="Hospital" style="max-width: 400px; border-radius: 10px;">
         </div>
     </section>
-
 
     <section class="services" id="services">
         <h3>Our Services</h3>
@@ -253,79 +279,34 @@
                 <h4>Alerts & Call Reminders</h4>
                 <a href="alerts.html">View</a>
             </div>
-            <div class="service">
-                <img src="https://health-e.in/wp-content/uploads/2023/09/medical-records.webp" alt="Reports">
-                <h4>Reports</h4>
-                <a href="reports.html">View</a>
-            </div>
-
-            <!-- Specialists -->
-            <div class="service">
-                <img src="https://lifelinehospitalkerala.com/wp-content/uploads/2024/09/woman-is-holding-heart-shaped-human-heart-with-right-hand-scaled.jpg.webp" alt="Cardiology">
-                <h4>Cardiology</h4>
-                <a href="cardiology.html">View</a>
-            </div>
-            <div class="service">
-                <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/06/orthopedic-doctor-ankle-732x549-thumbnail.jpg" alt="Orthopedics">
-                <h4>Orthopedics</h4>
-                <a href="orthopedics.html">View</a>
-            </div>
-            <div class="service">
-                <img src="https://vanshhospital.in/wp-content/uploads/2023/12/Pediatric.jpg" alt="Pediatrics">
-                <h4>Pediatrics</h4>
-                <a href="pediatrics.html">View</a>
-            </div>
-            <div class="service">
-                <img src="https://aryanhospital.in/wp-content/uploads/sites/28/2024/07/Neurology-1.jpg" alt="Neurology">
-                <h4>Neurology</h4>
-                <a href="neurology.html">View</a>
-            </div>
-            <div class="service">
-                <img src="https://images.squarespace-cdn.com/content/v1/666a06fbdeb99422f77f5935/e47d1d7a-0aec-4ef4-82f0-36906840f35c/dermatologist-valley-dermatology.png" alt="Dermatology">
-                <h4>Dermatology</h4>
-                <a href="dermatology.html">View</a>
-            </div>
-            <div class="service">
-                <img class="large" src="https://www.radiology.expert/content/images/sfeerfotos/resized/RadiologyExpert_Home2_640x500.jpg" alt="Radiology">
-                <h4>Radiology</h4>
-                <a href="radiology.html">View</a>
-            </div>
-            <div class="service">
-                <img src="https://bouve.northeastern.edu/wp-content/uploads/2023/05/psychiatrist-vs-psychologist-which-one-is-right-northeastern-graduate.webp" alt="Psychiatry">
-                <h4>Psychiatry</h4>
-                <a href="psychiatry.html">View</a>
-            </div>
-            <div class="service">
-                <img src="https://psdconnect.org/cdn/specialty_oncology_1_376da7aabb_b622eacadf.webp" alt="Oncology">
-                <h4>Oncology</h4>
-                <a href="oncology.html">View</a>
-            </div>
         </div>
     </section>
 
-    <!-- Query Box Section -->
-    <section class="query-box" id="query-box">
-        <h3>Have a Query?</h3>
-        <p>Feel free to ask any questions or share your feedback below.</p>
-        <textarea placeholder="Write your query here..."></textarea><br>
-        <button>Submit</button>
-    </section>
+    
 
-    <!-- Contact Details Section -->
-    <section class="contact-details" id="contact">
+    <!-- Query Box -->
+    <div class="query-box">
+        <h3>Have any questions?</h3>
+        <p>We are here to help. Please feel free to ask your queries.</p>
+        <textarea placeholder="Write your query..."></textarea>
+        <button>Submit Query</button>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-details" id="contact">
         <h3>Contact Us</h3>
-        <p><strong>Address:</strong> Gitam University, Rudraram, Hyderabad, 502329</p>
-        <p><strong>Email:</strong> contact@serenovahealthcare.com</p>
-        <p><strong>Phone:</strong> +91-7989417869</p>
-    </section>
+        <p>Email: info@serenovahealth.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Serenity Lane, City, Country</p>
+    </div>
 
     <footer>
         <p>&copy; 2024 Serenova Healthcare. All Rights Reserved.</p>
     </footer>
 
-    <!-- Microphone Button -->
-    <button class="mic-button">
-        <i class="fas fa-microphone"></i>
-    </button>
+    <!-- Mic and Chat Box Buttons -->
+    <button class="mic-button"><i class="fas fa-microphone"></i></button>
+    <button class="chat-box-button"><i class="fas fa-comment"></i></button>
+
 </body>
 </html>
