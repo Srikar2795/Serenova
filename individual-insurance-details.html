@@ -36,6 +36,20 @@
             line-height: 1.6;
         }
 
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
         ul.insurance-list {
             list-style: none;
             padding: 0;
@@ -127,9 +141,14 @@
             find the best coverage that suits your lifestyle and requirements.
         </p>
 
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search for an insurance company..." onkeyup="filterList()">
+        </div>
+
         <h2>List of Insurance Companies:</h2>
 
-        <ul class="insurance-list">
+        <ul class="insurance-list" id="insurance-list">
             <li class="insurance-item">
                 <span>🌟 HDFC ERGO HealthGuard Insurance</span>
                 <button>GET QUOTE</button>
@@ -244,5 +263,21 @@
     <footer>
         <p>&copy; 2024 Serenova Insurance App. All rights reserved.</p>
     </footer>
+
+    <script>
+        function filterList() {
+            const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+            const items = document.querySelectorAll('.insurance-item');
+            
+            items.forEach(item => {
+                const companyName = item.querySelector('span').textContent.toLowerCase();
+                if (companyName.includes(searchQuery)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
