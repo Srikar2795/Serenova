@@ -8,26 +8,24 @@
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #1e90ff, #87cefa); /* Gradient Blue Background */
+      background-color: white; /* Set background to white */
       color: #333;
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* Align content at the top */
     }
 
     .header {
+      width: 100%;
+      background-color: #1e90ff; /* Blue background for header */
+      color: #fff; /* White text */
       text-align: center;
-      color: #fff;
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 30px;
+      padding: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .header span {
-      color: #ffe600; /* Golden accent for SERENOVA */
     }
 
     .upload-box {
@@ -38,6 +36,7 @@
       width: 100%;
       max-width: 450px;
       text-align: center;
+      margin-top: 30px; /* Ensure space from the header */
     }
 
     .upload-box h1 {
@@ -93,14 +92,14 @@
       text-align: center;
       margin-top: 20px;
       font-size: 12px;
-      color: #fff;
+      color: #1e90ff; /* Blue color for footer text */
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
   <div class="header">
-    Welcome to <span>SERENOVA</span>
+    SERENOVA
   </div>
   <div class="upload-box">
     <h1>Upload Your Prescription</h1>
