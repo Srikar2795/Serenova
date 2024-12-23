@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alerts - Serenova Healthcare</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,52 +25,50 @@
         }
 
         .alert-section {
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
-            background-color: #fff;
-            margin: 40px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .alert-section h2 {
             color: #007bff;
             font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-
-        .alert-card {
-            display: inline-block;
-            width: 280px;
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .alert-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .alert-card h3 {
-            color: #007bff;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        .alert-card p {
-            font-size: 1.1em;
-            color: #555;
             margin-bottom: 20px;
         }
 
-        .alert-card .alert-type {
-            font-size: 1.2em;
-            color: #ff6347;
-            font-weight: bold;
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card h3 {
+            font-size: 1.8em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         .cta-button {
@@ -79,28 +76,15 @@
             background-color: #007bff;
             color: #fff;
             font-size: 1.2em;
-            padding: 15px 30px;
+            padding: 10px 25px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            transition: all 0.3s;
+            transition: background-color 0.3s;
         }
 
         .cta-button:hover {
             background-color: #0056b3;
-        }
-
-        .back-link {
-            display: block;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .back-link a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-            font-size: 1.2em;
         }
 
         footer {
@@ -116,37 +100,26 @@
 
     <header>
         <h1>Serenova Healthcare - Alerts</h1>
-        <p>Stay updated with important health alerts and notifications</p>
+        <p>Choose how you want to stay updated!</p>
     </header>
 
     <div class="alert-section">
-        <h2>Recent Alerts</h2>
+        <h2>Notification Services</h2>
+        <div class="service-cards">
+            <!-- SMS Notifications Card -->
+            <div class="service-card">
+                <h3>SMS Notifications</h3>
+                <p>Receive timely updates about your medicines, appointments, and health tips directly via text messages.</p>
+                <a href="sms_subscription.html" class="cta-button">Subscribe</a>
+            </div>
 
-        <div class="alert-card">
-            <h3>COVID-19 Guidelines</h3>
-            <p class="alert-type">Important</p>
-            <p>Stay safe! We encourage all patients to follow the latest COVID-19 safety protocols. Click for more information.</p>
-            <a href="alert_details.html" class="cta-button">Read More</a>
+            <!-- Call Alerts Card -->
+            <div class="service-card">
+                <h3>Call Alerts</h3>
+                <p>Get important reminders and updates through automated calls for a more personal experience.</p>
+                <a href="call_subscription.html" class="cta-button">Subscribe</a>
+            </div>
         </div>
-
-        <div class="alert-card">
-            <h3>Medication Recall</h3>
-            <p class="alert-type">Urgent</p>
-            <p>A specific batch of medications has been recalled due to quality concerns. Please check if your medication is affected.</p>
-            <a href="alert_details.html" class="cta-button">Check Details</a>
-        </div>
-
-        <div class="alert-card">
-            <h3>Appointment Changes</h3>
-            <p class="alert-type">Notification</p>
-            <p>Some of our scheduled appointments have been rescheduled due to unforeseen circumstances. Please check your new appointment time.</p>
-            <a href="alert_details.html" class="cta-button">View Changes</a>
-        </div>
-
-    </div>
-
-    <div class="back-link">
-        <a href="index.html">Back to Home</a>
     </div>
 
     <footer>
