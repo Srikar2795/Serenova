@@ -102,6 +102,48 @@
       background-color: #005bb5;
     }
 
+    /* Request Medicine Section */
+    .request-medicine-section {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin: 30px auto;
+      max-width: 600px;
+    }
+
+    .request-medicine-header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .request-medicine-inputs input {
+      padding: 10px;
+      width: 100%;
+      border: 2px solid #1e90ff;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .request-medicine-button {
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .request-medicine-button:hover {
+      background-color: #005bb5;
+    }
+
     /* Cart Section */
     .cart-section {
       margin-top: 20px;
@@ -192,6 +234,16 @@
   <!-- Product Container -->
   <div class="container" id="products-container">
     <!-- Products will be dynamically inserted here -->
+  </div>
+
+  <!-- Request Medicine Section -->
+  <div class="request-medicine-section">
+    <div class="request-medicine-header">Request Medicine</div>
+    <div class="request-medicine-inputs">
+      <input type="text" id="medicine-name" placeholder="Enter medicine name" required>
+      <textarea id="medicine-message" placeholder="Enter your message or reason for request" required></textarea>
+      <button class="request-medicine-button" onclick="submitMedicineRequest()">Submit Request</button>
+    </div>
   </div>
 
   <!-- Cart Section -->
@@ -303,6 +355,20 @@
     // Event Listeners
     searchInput.addEventListener('input', filterAndSortProducts);
     sortSelect.addEventListener('change', filterAndSortProducts);
+
+    // Submit Medicine Request
+    function submitMedicineRequest() {
+      const name = document.getElementById('medicine-name').value;
+      const message = document.getElementById('medicine-message').value;
+
+      if (name && message) {
+        alert(`Request submitted for medicine: ${name}\nMessage: ${message}`);
+        document.getElementById('medicine-name').value = '';
+        document.getElementById('medicine-message').value = '';
+      } else {
+        alert('Please fill out both fields.');
+      }
+    }
 
     // Initial Render
     renderProducts(medicines);
