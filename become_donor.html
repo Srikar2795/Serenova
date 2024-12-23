@@ -147,12 +147,6 @@
                 <option value="O+">O+</option>
                 <option value="O-">O-</option>
             </select>
-            <select id="donorAvailability" required>
-                <option value="">Select Availability</option>
-                <option value="Weekdays">Weekdays</option>
-                <option value="Weekends">Weekends</option>
-                <option value="Anytime">Anytime</option>
-            </select>
             <button onclick="submitDonorForm()">Submit</button>
         </div>
 
@@ -177,17 +171,15 @@
             const contact = document.getElementById("donorContact").value;
             const location = document.getElementById("donorLocation").value;
             const bloodType = document.getElementById("donorBloodType").value;
-            const availability = document.getElementById("donorAvailability").value;
 
-            if (name && email && contact && location && bloodType && availability) {
+            if (name && email && contact && location && bloodType) {
                 // Create an object to store donor data
                 const donorData = {
                     name: name,
                     email: email,
                     contact: contact,
                     location: location,
-                    bloodType: bloodType,
-                    availability: availability
+                    bloodType: bloodType
                 };
 
                 // Store the donor data in localStorage (can be modified to store in a database)
