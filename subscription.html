@@ -123,19 +123,55 @@
         <input type="file" id="prescription" name="prescription" accept=".jpg, .jpeg, .png, .pdf" required>
       </div>
 
-      <!-- Address -->
+      <!-- Phone Number -->
       <div class="form-group">
-        <label for="address">Delivery Address:</label>
-        <input type="text" id="address" name="address" placeholder="Enter your full address" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
       </div>
 
-      <!-- Subscription Duration -->
+      <!-- Email -->
       <div class="form-group">
-        <label for="duration">For How Many Months:</label>
-        <input type="number" id="duration" name="duration" min="1" placeholder="Enter number of months" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
       </div>
 
-      <!-- Delivery Date -->
+      <!-- House Number -->
+      <div class="form-group">
+        <label for="house-number">House Number:</label>
+        <input type="text" id="house-number" name="house-number" placeholder="Enter your house number" required>
+      </div>
+
+      <!-- Street Name -->
+      <div class="form-group">
+        <label for="street-name">Street Name:</label>
+        <input type="text" id="street-name" name="street-name" placeholder="Enter your street name" required>
+      </div>
+
+      <!-- Area -->
+      <div class="form-group">
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area" placeholder="Enter your area" required>
+      </div>
+
+      <!-- State -->
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" required>
+      </div>
+
+      <!-- Pincode -->
+      <div class="form-group">
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
+      </div>
+
+      <!-- Delivery Months -->
+      <div class="form-group">
+        <label for="months">How many months should the medicines be delivered to the above address?</label>
+        <input type="number" id="months" name="months" min="1" placeholder="Enter number of months" required>
+      </div>
+
+      <!-- Preferred Delivery Date -->
       <div class="form-group">
         <label for="delivery-date">Preferred Delivery Date (Every Month):</label>
         <input type="number" id="delivery-date" name="delivery-date" min="1" max="31" placeholder="Enter a date (1-31)" required>
@@ -167,7 +203,7 @@
   </footer>
 
   <script>
-    const durationInput = document.getElementById("duration");
+    const monthsInput = document.getElementById("months");
     const totalPriceDiv = document.getElementById("total-price");
 
     // Price per month
@@ -181,7 +217,7 @@
     };
 
     function calculatePrice() {
-      const months = parseInt(durationInput.value, 10);
+      const months = parseInt(monthsInput.value, 10);
       if (!isNaN(months) && months > 0) {
         let totalPrice = months * monthlyPrice;
 
@@ -200,7 +236,7 @@
       }
     }
 
-    durationInput.addEventListener("input", calculatePrice);
+    monthsInput.addEventListener("input", calculatePrice);
   </script>
 </body>
 </html>
